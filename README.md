@@ -1,1 +1,1 @@
-# Projects
+# Sample CloudFormation templates

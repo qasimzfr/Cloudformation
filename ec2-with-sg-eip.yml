@@ -13,7 +13,7 @@ Resources:
       InstanceType: t2.micro
       SecurityGroups:
         - !Ref SSHSecurityGroup
-        - !Ref ServerSecuritGroup
+        - !Ref ServerSecurityGroup
 
   # an elastic IP for our instance
   MyEIP:
@@ -33,7 +33,7 @@ Resources:
         ToPort: 22
 
   # our second EC2 security group
-  SSHSecurityGroup:
+  ServerSecurityGroup:
     Type: AWS::EC2::SecurityGroup
     Properties:
       GroupDescription: !Ref SecurityGroupDescription
